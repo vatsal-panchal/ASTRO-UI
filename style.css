@@ -1,0 +1,305 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+
+
+
+
+nav{
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.new{
+    color: rgb(224, 116, 31);
+}
+
+.icons{
+    display: flex;
+    gap: 30px;
+}
+
+.search, .cart, .user{
+    width: 20px;
+    cursor: pointer;
+}
+
+.hero{
+    padding: 20px 40px 10px 70px;
+    width: 90%;
+    display: flex;
+    gap: 20px;
+}
+
+.left{
+    width: 20%;
+}
+
+.price{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.desc{
+    margin-top: 20px;
+}
+
+.content{
+    margin-top: 20px;
+    color: rgb(95, 95, 95);
+    
+}
+
+.btn{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+ 
+.arrow,.down{
+    width: 20px;
+}
+
+.detail1,.detail2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.right{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.sizes span{
+    background-color: rgb(239, 238, 238) ;
+    padding: 14px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.size-guide{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.color{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 220px;
+}
+
+.center img{
+    filter: drop-shadow(0px 25px 35px rgba(3, 0, 0, 0.501));
+        
+}
+
+.color span {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(239, 238, 238);
+    border-radius: 20px;
+    
+    
+}
+.color img{
+    width: 60px;
+    filter: drop-shadow(0px 5px 5px rgba(3, 0, 0, 0.501));
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.color img:hover{
+    scale: 1.1;
+}
+
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info span{
+    margin-left: 20px;
+    color: rgb(95, 95, 95);
+    
+}
+
+.info i{
+    color: rgb(95, 95, 95);
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.bag{
+    background-color: rgb(224, 116, 31);
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.wishlist{
+    transition: all ease 0.3s;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bag:hover{
+    background-color: rgb(227, 103, 9);
+    scale: 1.1;
+}
+
+.wishlist:hover{
+    scale: 1.1;
+}
+
+.active{
+    border:2px solid rgb(224, 116, 31);
+}
+
+#m{
+    background-color: rgb(224, 116, 31) ;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: #F3EFEB;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+}
+
+.up img{
+    width: 100px;
+    height: 115px;
+    
+}
+
+.image1, .image2, .image3, .image4{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    min-width: 250px;
+    
+}
+
+.image{
+    min-width: 120px;
+    height: 130px;
+}
+
+.up span {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.up p {
+    line-height: 1.5;
+    color: #555;
+    width: 190px;
+}
+
+
+.down{
+    background-color: #F3EFEB;
+    padding: 20px;
+    width: 100%;
+    border-top: 1px solid #E2DDD7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.down img{
+    width: 25px;
+}
+
+.down div{
+    display: flex;
+    gap: 10px;
+    min-width: 250px;
+}
+
+.down span{
+    display: flex;
+    flex-direction: column;
+}
+
+.down p{
+    color: #555;
+    font-size: small;
+}
+
+.orange{
+    color: rgb(224, 116, 31) ;
+}
