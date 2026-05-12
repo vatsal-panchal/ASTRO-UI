@@ -1,180 +1,318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASTRO.</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-</head>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Image/main-image.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="main-header flex gap-10 items-center justify-between">
+          <div class="nav-box flex items-center gap-18">
+            <div class="logo-box flex items-end">
+              <h1 class="text-4xl font-semibold">ASTRO</h1>
+              <span class="text-[8px]"><i class="ri-circle-fill"></i></span>
+            </div>
+            <nav class="nav-wrapper">
+              <ul class="uppercase flex gap-10">
+                <li class="text-base"><a href="#">Products</a></li>
+                <li class="text-base"><a href="#">category</a></li>
+                <li class="text-base"><a href="#">about us</a></li>
+                <li class="text-base"><a href="#">contact</a></li>
+              </ul>
+            </nav>
+          </div>
 
-<body>
-    <nav>
-        <ul>
-            <h1>ASTRO<span class="orange">.</span></h1>
-            <li>PRODUCTS</li>
-            <li>CATEGORY</li>
-            <li>ABOUT</li>
-            <li>CONTACT US</li>
-        </ul>
-        <div class="icons">
-            <img src="assets/search.svg" alt="search" class="search">
-            <img src="assets/cart.svg" alt="cart" class="cart">
-            <img src="assets/user.svg" alt="user" class="user">
+          <div class="icons flex gap-6 text-xl">
+            <i class="ri-search-line"></i>
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-user-line"></i>
+          </div>
         </div>
-    </nav>
-    <hr>
-    <main>
-        <section class="hero">
-            <div class="left">
-                <p class="new">NEW</p>
-                <h1 class="title">ASTRO
-                    WINTER
-                    ARMOR <span class="orange">II</span></h1>
-                <h2 class="price">$560</h2>
-                <hr>
-                <h3 class="desc">Description</h3>
-                <p class="content">A next-gen cold war jacket. The
-                    essence of retro style and the
-                    resilience you need for extreme winter
-                    conditions. Engineered to provide
-                    versatile function for your winter
-                    wardrobe. accented with strategic
-                    utility details.</p>
-                <div class="btn">
-                    <p class="btn-content">READ MORE</p>
-                    <img src="assets/arrow.svg" alt="arrow" class="arrow">
-                </div>
-                <hr>
-                <div class="detail1">
-                    <p class="detail1-content">MATERIAL & CARE <i class="ri-arrow-down-s-line"></i></p>
-
-                </div>
-                <hr>
-                <div class="detail2">
-                    <p class="detail2-content">SHIPPING & RETURNS <i class="ri-arrow-down-s-line"></i></p>
-
-                </div>
-
+      </header>
+      <main>
+        <section class="hero-sec flex mt-10 gap-2 jutify-center">
+          <div class="main-left w-[20%]">
+            <div class="content-head">
+              <h5 class="text-[#f97316] text-base">NEW</h5>
+              <h2 class="text-5xl font-bold">
+                Astro <br />
+                Winner <br />
+                Armot <span class="text-[#f97316]">||</span>
+              </h2>
+              <h4 class="text-2xl font-semibold my-6">$560</h4>
+              <hr class="text-[#dad9d9]"/>
             </div>
-            <div class="center">
-                <img src="assets/jacket.png" alt="jacket">
-                <div class="info">
-                    <span><i class="ri-snowflake-line"></i> EXTREME WARMTH </span>
-                    <span><i class="ri-shield-check-line"></i> WIND RESISTANT</span>
-                    <span><i class="ri-leaf-line"></i> LIGHTWEIGHT</span>
-                </div>
+            <div class="drop-content flex flex-col py-4 gap-4">
+              <h5 class="text-[#4F4F4F] text-base font-semibold">
+                Discription
+              </h5>
+              <p class="text-[#8B8885] text-sm">
+                A next gen cold ware jackt. the essence of retro style and the
+                resilience you need for extreme winter condition. Engineered to
+                provide versatile function for for your winter waredrobe,
+                ccented with strategic utility details.
+              </p>
+              <div
+                class="read-more text-[#4F4F4F] text-base text-semibold flex cursor-pointer"
+              >
+                <h4>Read More</h4>
+                <i class="ri-arrow-right-s-line text-xl ps-1"></i>
+              </div>
+              <hr class="text-[#dad9d9]"/>
             </div>
-            <div class="right">
-                <h4 class="size">SIZE</h4>
-                <div class="sizes">
-                    <span id="s">S</span>
-                    <span id="m">M</span>
-                    <span id="l">L</span>
-                    <span id="xl">XL</span>
-                </div>
-                <div class="size-guide">
-                    <p class="btn-content">SIZE GUIDE</p>
-                    <img src="assets/arrow.svg" alt="arrow" class="arrow">
-                </div>
-                <hr>
-                <h4>COLOR</h4>
-                <div class="color">
-                    <span class="active"><img src="assets/jacket.png" alt="jacket"></span>
-                    <span><img src="assets/red_jacket.png" alt="red_jacket"></span>
-                    <span><img src="assets/black_jacket.png" alt="black_jacket"></span>
-                    <span><img src="assets/white_jacket.png" alt="white_jacket"></span>
-                </div>
-                <div class="btns">
-                    <button class="wishlist"><i class="ri-heart-line"> ADD TO WISHLIST</i></button>
-                    <button class="bag">ADD TO BAG <i class="ri-shopping-bag-2-line"></i></button>
-                </div>
+            <div class="subdrop">
+              <div
+                class="ar-drop flex justify-between items-center cursor-pointer pt-2 pb-4"
+              >
+                <h4 class="uppercase text-base">Material and Care</h4>
+                <i class="ri-arrow-down-s-line text-xl"></i>
+              </div>
+              <hr class="text-[#dad9d9]"/>
+              <div
+                class="ar-drop flex justify-between items-center cursor-pointer pt-4"
+              >
+                <h4 class="uppercase text-base">Shippign Returns</h4>
+                <i class="ri-arrow-down-s-line text-xl"></i>
+              </div>
             </div>
+          </div>
+          <div class="hero-img w-[60%]">
+            <img
+              src="Image/main-image.png"
+              alt="hero-img"
+              class="object-cover"
+            />
+          </div>
+          <div class="main-right w-[20%]">
+            <div class="size-box mt-12">
+              <h2 class="text-3xl font-bold text-center">SIZE</h2>
+              <div class="s-wrapper flex gap-3 mt-4">
+                <button
+                  class="s-box bg-[#E5E5E5] cursor-pointer w-[50px] h-[50px] rounded-lg shadow-md"
+                >
+                  <h5>S</h5>
+                </button>
+                <button
+                  class="s-box bg-[#E5E5E5] cursor-pointer w-[50px] h-[50px] rounded-lg shadow-md"
+                >
+                  <h5>M</h5>
+                </button>
+                <button
+                  class="s-box bg-[#E5E5E5] cursor-pointer w-[50px] h-[50px] rounded-lg shadow-md"
+                >
+                  <h5>L</h5>
+                </button>
+                <button
+                  class="s-box bg-[#E5E5E5] cursor-pointer w-[50px] h-[50px] rounded-lg shadow-md"
+                >
+                  <h5>XL</h5>
+                </button>
+              </div>
+              <div class="s-guide flex justify-center my-3">
+                <h6 class="text-base">Size Guide</h6>
+                <i class="ri-arrow-right-s-line text-xl"></i>
+              </div>
+              <hr class="text-[#dad9d9]"/>
+            </div>
+            <div class="color-wrapper">
+              <h2 class="text-center text-3xl font-bold my-4">Color</h2>
+              <div class="color-box flex flex-wrap gap-4">
+                <div class="cont-color">
+                  <div
+                    class="imgc-box w-[110px] h-[110px] bg-[#D3D3D3] cursor-pointer rounded-2xl p-2 overflow-hidden"
+                  >
+                    <img
+                      src="Image/beige jacket.png"
+                      alt=""
+                      class="-translate-y-6"
+                    />
+                  </div>
+                  <p class="text-center pt-1">Beige</p>
+                </div>
+                <div class="cont-color">
+                  <div
+                    class="imgc-box w-[110px] h-[110px] bg-[#D3D3D3] cursor-pointer rounded-2xl p-2 overflow-hidden"
+                  >
+                    <img
+                      src="Image/red jacket.png"
+                      alt=""
+                      class="-translate-y-4"
+                    />
+                  </div>
+                  <p class="text-center pt-1">Red</p>
+                </div>
+                <div class="cont-color">
+                  <div
+                    class="imgc-box w-[110px] h-[110px] bg-[#D3D3D3] cursor-pointer rounded-2xl p-2 overflow-hidden"
+                  >
+                    <img
+                      src="Image/black jacket.png"
+                      alt=""
+                      class="-translate-y-4"
+                    />
+                  </div>
+                  <p class="text-center pt-1">Black</p>
+                </div>
+                <div class="cont-color">
+                  <div
+                    class="imgc-box w-[110px] h-[110px] bg-[#D3D3D3] cursor-pointer rounded-2xl p-2 overflow-hidden"
+                  >
+                    <img
+                      src="Image/white jacket.png"
+                      alt=""
+                      class="-translate-y-4"
+                    />
+                  </div>
+                  <p class="text-center pt-1">White</p>
+                </div>
+              </div>
+            </div>
+            <div class="button-wrapper flex flex-col items-center gap-4 mt-10">
+              <div class="wishlist">
+                <button
+                  class="px-10 py-2 text-base bg-[#F7F1EA] border border-[#F8DECA] rounded-full cursor-pointer shadow-lg shadow-[#F8DECA]"
+                >
+                  <i class="ri-heart-line text-xl me-2"></i> Add to Wishlist
+                </button>
+              </div>
+              <div class="bag">
+                <button
+                  class="px-14 py-2 cursor-pointer text-base bg-[#F97316] text-white rounded-full cursor-pointer"
+                >
+                  Add to Bag <i class="ri-shopping-bag-line ms-2 text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
-        <section class="bottom">
-            <div class="up">
-                <div class="image1">
-                    <div class="image">
-                        <img src="assets/right.png" alt="right_side">
-
-                    </div>
-                    <span>
-                        <h4>3X WATER-REPELLENT</h4>
-                        <p>The fabric repels rain, snow
-                            and moisture while keeping
-                            you dry and comfortable.</p>
-                    </span>
-                </div>
-                <div class="image2">
-                    <div class="image"><img src="assets/left.png" alt="left_side"></div>
-                    <span>
-                        <h4>3D AREAS PUFFERED</h4>
-                        <p>Strategically padded
-                            zones trap heat and
-                            maximize insulation
-                            without the bulk</p>
-                    </span>
-                </div>
-                <div class="image3">
-                    <div class="image"><img src="assets/front.png" alt="front_view"></div>
-                    <span>
-                        <h4>INSULATION</h4>
-                        <p>Advanced thermal
-                            filling locks in warmth
-                            up to -30<sup>o</sup> for
-                            extreme conditions.</p>
-                    </span>
-                </div>
-                <div class="image4">
-                    <div class="image"><img src="assets/pockets.png" alt="pockets"></div>
-                    <span>
-                        <h4>UTILITY
-                            POCKETS</h4>
-                        <p>Multi-functional
-                            pockets for secure
-                            storage on the go.</p>
-                    </span>
-                </div>
-
-
+        <section class="banner-sec">
+          <div class="banner-wrapper flex justify-center gap-10">
+            <div class="banner-box flex text-[#808080] gap-2">
+              <span><i class="ri-snowflake-fill text-xl"></i></span>
+              <h5 class="text-xl">Exteme Warmth</h5>
             </div>
-            <div class="down">
-                <div>
-                    <img src="assets/fabric.svg" alt="fabric">
-                    <span>
-                        <h5>PREMIUM FABRICS</h5>
-                        <p>Durable, high-performance materials</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="assets/shield.svg" alt="shield">
-                    <span>
-                        <h5>THERMAL PROTECTION</h5>
-                        <p>Built for exteme winter climates</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="assets/circle.svg" alt="circle">
-                    <span>
-                        <h5>DESIGNED FOR FUNCTION</h5>
-                        <p>Every detail serves a purpose</p>
-                    </span>
-                </div>
-                <div>
-                    <img src="assets/star.svg" alt="star">
-                    <span>
-                        <h5>LIMITED EDITION</h5>
-                        <p>Exclusive drops, limited quantities</p>
-                    </span>
-                </div>
+            <div class="banner-box flex text-[#808080] gap-2">
+              <span><i class="ri-shield-line text-xl"></i></span>
+              <h5 class="text-xl">Wind Resistance</h5>
             </div>
+            <div class="banner-box flex text-[#808080] gap-2">
+              <span><i class="ri-leaf-line text-xl"></i></span>
+              <h5 class="text-xl">Light Weight</h5>
+            </div>
+          </div>
         </section>
-    </main>
-</body>
-
+        <section class="card-sec py-12">
+          <div
+            class="img-card-wrap px-6 py-8 bg-[#F7F1EA] border border-[#F8DECA] rounded-3xl shadow-md shadow-[#f8DECA] flex gap-2"
+          >
+            <div class="img-card flex gap-3">
+              <div
+                class="card-box w-[150px] h-[190px] rounded-2xl overflow-hidden shrink-0"
+              >
+                <img src="Image/sd-1.jpg" alt="" />
+              </div>
+              <div class="card-con py-2 flex flex-col gap-2">
+                <h3 class="text-2xl font-bold">3X Water-Repellent</h3>
+                <p class="text-[#808080] text-sm font-semibold">
+                  The fabric repels rain, snow and moisture while keeping you
+                  dry and comfortable.
+                </p>
+              </div>
+            </div>
+            <div class="img-card flex gap-3">
+              <div
+                class="card-box w-[150px] h-[190px] rounded-2xl overflow-hidden shrink-0"
+              >
+                <img src="Image/sd-2.jpg" alt="" />
+              </div>
+              <div class="card-con py-2 flex flex-col gap-2">
+                <h3 class="text-2xl font-bold">3D AREAS PUFFERED</h3>
+                <p class="text-[#808080] text-sm font-semibold">
+                  Strategically padded zones trap heat and maximize insulation.
+                </p>
+              </div>
+            </div>
+            <div class="img-card flex gap-3">
+              <div
+                class="card-box w-[150px] h-[190px] rounded-2xl overflow-hidden shrink-0"
+              >
+                <img src="Image/8aTdC.jpg" alt="" />
+              </div>
+              <div class="card-con py-2 flex flex-col gap-2">
+                <h3 class="text-2xl font-bold">INSULATION</h3>
+                <p class="text-[#808080] text-sm font-semibold">
+                  Advanced thermal filling locks in warmth up to -30°C for
+                  extreme conditions.
+                </p>
+              </div>
+            </div>
+            <div class="img-card flex gap-3">
+              <div
+                class="card-box w-[150px] h-[190px] rounded-2xl overflow-hidden shrink-0"
+              >
+                <img src="Image/sd-4.jpg" alt="" />
+              </div>
+              <div class="card-con py-2 flex flex-col gap-2">
+                <h3 class="text-2xl font-bold">UTILITY POCKETS</h3>
+                <p class="text-[#808080] text-sm font-semibold">
+                  Multi-functional pockets for secure storage on the go.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="icon-card-wrap px-6 bg-[#F7F1EA] border border-[#F8DECA] rounded-3xl shadow-md shadow-[#f8DECA] mt-4"
+          >
+            <div class="card-icon flex gap-4 py-2 justify-center">
+              <div class="iconc-box flex items-center gap-3 border-r border-[#dad9d9] py-4 pe-8">
+                <div class="i-box">
+                  <i class="ri-t-shirt-2-line text-3xl"></i>
+                </div>
+                <div class="i-con">
+                  <h3 class="text-sm font-semibold">PREMIUM FABRICS</h3>
+                  <p class="text-xs text-[#808080]">Durable, high-performance materials.</p>
+                </div>
+              </div>
+              <div class="iconc-box flex items-center gap-3 border-r border-[#dad9d9] py-4 px-4">
+                <div class="i-box">
+                  <i class="ri-shield-line text-3xl"></i>
+                </div>
+                <div class="i-con pe-4">
+                  <h3 class="text-sm font-semibold">THERMAL PROTECTION</h3>
+                  <p class="text-xs text-[#808080]">Built for extreme winter climates.</p>
+                </div>
+              </div>
+              <div class="iconc-box flex items-center gap-3 border-r border-[#dad9d9] py-4 px-4">
+                <div class="i-box">
+                  <i class="ri-stop-circle-line text-3xl text-[#F97316]"></i>
+                </div>
+                <div class="i-con pe-4">
+                  <h3 class="text-sm font-semibold">DESIGNED FOR FUNCTION</h3>
+                  <p class="text-xs text-[#808080]">Every detail serves a purpose.</p>
+                </div>
+              </div>
+              <div class="iconc-box flex items-center gap-3 py-3 ps-4">
+                <div class="i-box">
+                  <i class="ri-star-line text-3xl text-[#F97316]"></i>
+                </div>
+                <div class="i-con pe-4">
+                  <h3 class="text-sm font-semibold">LIMITED EDITION</h3>
+                  <p class="text-xs text-[#808080]">Exclusive drops, limited quantities.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
